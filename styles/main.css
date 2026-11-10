@@ -104,3 +104,34 @@ section:nth-of-type(1) article{
     /* display flex (better than typing float and clear both etc */
     display: flex;
 }
+
+section:nth-of-type(2) article{
+    display: flex;
+    /* inverts the direction of the flex */
+    flex-direction: row-reverse;
+
+    /* flex direction can also be column if you want it to be stacked vertically */
+}
+
+section:nth-of-type(3) article{
+    display: flex;
+
+    /* there are multiple ways to space elements in the flexbox (or justify the content)
+    - flex-start, flex-end, and center move content around 
+    - space-between spreads elements with an equal amount of space
+    - space-around spreads elements with an equal amount on either side of the elements
+    - space-evenly equally distrubutes the elements within available space*/
+    justify-content: space-evenly;
+}
+
+section:nth-of-type(4) article{
+    display: flex;
+
+    /* you can add a little bit of space in between objects */
+    gap: 4px;
+}
+
+/* you can tell each object inside of the flex to grow to take up available space */
+section:nth-of-type(4) article div:nth-of-type(2){
+    flex-grow: 2;
+}
