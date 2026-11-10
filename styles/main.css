@@ -171,7 +171,7 @@ nav ul li a:hover{
 
 /* MEDIA QUERIES */
 
-
+/* im lowkey not typing all the professor's comments anymore bro */
 @media screen and (min-width:640px) {
     .flexer {
         display: flex;
@@ -180,6 +180,13 @@ nav ul li a:hover{
 
     main {
         flex-grow: 4;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        /* only for decorative, changes order. Accessibility will not recognize this */
+        order: 2;
     }
 
     aside {
