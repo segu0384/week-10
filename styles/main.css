@@ -1,4 +1,8 @@
+
+
 /* CSS RESET */
+
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -49,4 +53,47 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+
+/* MAIN STYLES */
+
+/* custom font */
+@font-face {
+  font-family: myfont; 
+  src: url('minecraft.ttf') format('truetype');
+}
+
+.container {
+    /* use my font */
+    font-family: myfont;
+    /* always give your site a max width */
+    max-width: 900px;
+    /* centers elements within the container */
+    margin: 0 auto;
+    
+    /* colours for containers */
+    background-color: blue;
+    color: white;
+}
+
+h1 {
+    font-size: 2.2em;
+    /* an em is always relative to the current font size which by default is set to 16px (2.2 x 16px = 35.2px) */
+
+    padding: 0.5em; /* 0.5 x 35.2 = 17.6px */
+
+    margin-bottom: 1rem; /* 1rem x 16px = 16px */
+}
+
+h3 {
+    font-size: 1.6em;
+    padding: 0.5em;
+}
+
+article div {
+    font-size: 36px; /* we can do this just because we can (instead of em) according to my professor */
+    padding: 10px;
+    border: 2px solid black;
+    background-color: red;
 }
