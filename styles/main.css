@@ -97,3 +97,10 @@ article div {
     border: 2px solid black;
     background-color: red;
 }
+
+section:nth-of-type(1) article{
+    /* nth-child selects an element based on its position in its parent regardless of what type of elements are there. nth-of-type will onlly select the element at that position if it matches the element type */
+
+    /* display flex (better than typing float and clear both etc */
+    display: flex;
+}
